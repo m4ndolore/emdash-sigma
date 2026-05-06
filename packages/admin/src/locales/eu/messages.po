@@ -444,7 +444,7 @@ msgid "Add"
 msgstr ""
 
 #. placeholder {0}: field.item_label
-#: packages/admin/src/components/PortableTextEditor.tsx:1321
+#: packages/admin/src/components/PortableTextEditor.tsx:1465
 msgid "Add {0}"
 msgstr ""
 
@@ -462,6 +462,14 @@ msgstr ""
 
 #: packages/admin/src/components/FieldEditor.tsx:545
 msgid "Add at least one sub-field to define the repeater structure."
+msgstr ""
+
+#: packages/admin/src/components/PortableTextEditor.tsx:2514
+msgid "Add column after"
+msgstr ""
+
+#: packages/admin/src/components/PortableTextEditor.tsx:2507
+msgid "Add column before"
 msgstr ""
 
 #: packages/admin/src/components/MenuEditor.tsx:291
@@ -493,7 +501,7 @@ msgstr ""
 msgid "Add First Item"
 msgstr ""
 
-#: packages/admin/src/components/PortableTextEditor.tsx:1321
+#: packages/admin/src/components/PortableTextEditor.tsx:1465
 msgid "Add item"
 msgstr ""
 
@@ -524,6 +532,14 @@ msgstr ""
 
 #: packages/admin/src/components/PluginManager.tsx:201
 msgid "Add plugins to your astro.config.mjs to extend EmDash functionality."
+msgstr ""
+
+#: packages/admin/src/components/PortableTextEditor.tsx:2537
+msgid "Add row after"
+msgstr ""
+
+#: packages/admin/src/components/PortableTextEditor.tsx:2530
+msgid "Add row before"
 msgstr ""
 
 #: packages/admin/src/components/FieldEditor.tsx:539
@@ -849,7 +865,7 @@ msgid "Browse themes and preview them with your own content."
 msgstr ""
 
 #: packages/admin/src/components/editor/BlockMenu.tsx:101
-#: packages/admin/src/components/PortableTextEditor.tsx:757
+#: packages/admin/src/components/PortableTextEditor.tsx:886
 msgid "Bullet List"
 msgstr "Buleta zerrenda"
 
@@ -1067,7 +1083,7 @@ msgid "Code"
 msgstr ""
 
 #: packages/admin/src/components/editor/BlockMenu.tsx:93
-#: packages/admin/src/components/PortableTextEditor.tsx:787
+#: packages/admin/src/components/PortableTextEditor.tsx:916
 msgid "Code Block"
 msgstr "Kode blokea"
 
@@ -1147,7 +1163,7 @@ msgstr ""
 #: packages/admin/src/components/comments/CommentDetail.tsx:103
 #: packages/admin/src/components/comments/CommentInbox.tsx:293
 #: packages/admin/src/components/Dashboard.tsx:164
-#: packages/admin/src/components/PortableTextEditor.tsx:1813
+#: packages/admin/src/components/PortableTextEditor.tsx:1957
 #: packages/admin/src/components/SectionEditor.tsx:191
 #: packages/admin/src/components/Sidebar.tsx:412
 msgid "Content"
@@ -1272,7 +1288,7 @@ msgstr ""
 msgid "Create"
 msgstr ""
 
-#: packages/admin/src/components/PortableTextEditor.tsx:758
+#: packages/admin/src/components/PortableTextEditor.tsx:887
 msgid "Create a bullet list"
 msgstr "Sortu buleta zerrenda"
 
@@ -1281,7 +1297,7 @@ msgstr "Sortu buleta zerrenda"
 msgid "Create a new {0}"
 msgstr ""
 
-#: packages/admin/src/components/PortableTextEditor.tsx:768
+#: packages/admin/src/components/PortableTextEditor.tsx:897
 msgid "Create a numbered list"
 msgstr "Sortu zenbakitutako zerrenda"
 
@@ -1543,6 +1559,10 @@ msgstr ""
 msgid "Delete {0}?"
 msgstr ""
 
+#: packages/admin/src/components/PortableTextEditor.tsx:2521
+msgid "Delete column"
+msgstr ""
+
 #: packages/admin/src/components/comments/CommentInbox.tsx:405
 msgid "Delete Comment?"
 msgstr ""
@@ -1585,8 +1605,16 @@ msgstr ""
 msgid "Delete Redirect?"
 msgstr ""
 
+#: packages/admin/src/components/PortableTextEditor.tsx:2542
+msgid "Delete row"
+msgstr ""
+
 #: packages/admin/src/components/Sections.tsx:294
 msgid "Delete Section?"
+msgstr ""
+
+#: packages/admin/src/components/PortableTextEditor.tsx:2557
+msgid "Delete table"
 msgstr ""
 
 #: packages/admin/src/components/ContentList.tsx:346
@@ -1731,7 +1759,7 @@ msgstr ""
 msgid "Distraction-free mode (⌘⇧\\)"
 msgstr ""
 
-#: packages/admin/src/components/PortableTextEditor.tsx:797
+#: packages/admin/src/components/PortableTextEditor.tsx:926
 msgid "Divider"
 msgstr "Banatzailea"
 
@@ -1790,7 +1818,7 @@ msgstr "Zirriborroak"
 msgid "Drag and drop or click to browse (.xml)"
 msgstr ""
 
-#: packages/admin/src/components/PortableTextEditor.tsx:1497
+#: packages/admin/src/components/PortableTextEditor.tsx:1641
 msgid "Drag to reorder"
 msgstr ""
 
@@ -1921,11 +1949,11 @@ msgid "Email verified!"
 msgstr ""
 
 #. placeholder {0}: block.label
-#: packages/admin/src/components/PortableTextEditor.tsx:1826
+#: packages/admin/src/components/PortableTextEditor.tsx:1970
 msgid "Embed a {0}"
 msgstr "{0} txertatu"
 
-#: packages/admin/src/components/PortableTextEditor.tsx:1829
+#: packages/admin/src/components/PortableTextEditor.tsx:1973
 msgid "Embeds"
 msgstr "Txertaketak"
 
@@ -2299,17 +2327,17 @@ msgid "Group (optional)"
 msgstr ""
 
 #: packages/admin/src/components/editor/BlockMenu.tsx:61
-#: packages/admin/src/components/PortableTextEditor.tsx:727
+#: packages/admin/src/components/PortableTextEditor.tsx:856
 msgid "Heading 1"
 msgstr "1. goiburukoa"
 
 #: packages/admin/src/components/editor/BlockMenu.tsx:69
-#: packages/admin/src/components/PortableTextEditor.tsx:737
+#: packages/admin/src/components/PortableTextEditor.tsx:866
 msgid "Heading 2"
 msgstr "2. goiburukoa"
 
 #: packages/admin/src/components/editor/BlockMenu.tsx:77
-#: packages/admin/src/components/PortableTextEditor.tsx:747
+#: packages/admin/src/components/PortableTextEditor.tsx:876
 msgid "Heading 3"
 msgstr "3. goiburukoa"
 
@@ -2369,7 +2397,7 @@ msgid "If an account exists for <0>{email}</0>, we've sent a sign-in link."
 msgstr "<0>{email}</0> kontua existitzen bada, sartzeko esteka magikoa bidali dugu."
 
 #: packages/admin/src/components/FieldEditor.tsx:200
-#: packages/admin/src/components/PortableTextEditor.tsx:1795
+#: packages/admin/src/components/PortableTextEditor.tsx:1939
 msgid "Image"
 msgstr "Irudia"
 
@@ -2497,23 +2525,27 @@ msgstr ""
 msgid "Insert"
 msgstr ""
 
-#: packages/admin/src/components/PortableTextEditor.tsx:778
+#: packages/admin/src/components/PortableTextEditor.tsx:907
 msgid "Insert a blockquote"
 msgstr "Txertatu blockquote etiketa"
 
-#: packages/admin/src/components/PortableTextEditor.tsx:788
+#: packages/admin/src/components/PortableTextEditor.tsx:917
 msgid "Insert a code block"
 msgstr "Txertatu kode blokea"
 
-#: packages/admin/src/components/PortableTextEditor.tsx:798
+#: packages/admin/src/components/PortableTextEditor.tsx:927
 msgid "Insert a horizontal rule"
 msgstr "Txertatu marra horizontala"
 
-#: packages/admin/src/components/PortableTextEditor.tsx:1810
+#: packages/admin/src/components/PortableTextEditor.tsx:1954
 msgid "Insert a reusable section"
 msgstr "Txertatu atal berrerabilgarria"
 
-#: packages/admin/src/components/PortableTextEditor.tsx:1796
+#: packages/admin/src/components/PortableTextEditor.tsx:937
+msgid "Insert a table"
+msgstr ""
+
+#: packages/admin/src/components/PortableTextEditor.tsx:1940
 msgid "Insert an image"
 msgstr "Txertatu irudia"
 
@@ -2523,6 +2555,10 @@ msgstr ""
 
 #: packages/admin/src/components/SectionPickerModal.tsx:57
 msgid "Insert Section"
+msgstr ""
+
+#: packages/admin/src/components/PortableTextEditor.tsx:2842
+msgid "Insert Table"
 msgstr ""
 
 #: packages/admin/src/components/settings/SocialSettings.tsx:161
@@ -2581,7 +2617,7 @@ msgid "Invite User"
 msgstr ""
 
 #. placeholder {0}: index + 1
-#: packages/admin/src/components/PortableTextEditor.tsx:1483
+#: packages/admin/src/components/PortableTextEditor.tsx:1627
 #: packages/admin/src/components/RepeaterField.tsx:234
 msgid "Item {0}"
 msgstr ""
@@ -2628,7 +2664,7 @@ msgstr ""
 msgid "Language"
 msgstr "Hizkuntza"
 
-#: packages/admin/src/components/PortableTextEditor.tsx:728
+#: packages/admin/src/components/PortableTextEditor.tsx:857
 msgid "Large section heading"
 msgstr "Atal-goiburu handia"
 
@@ -2885,7 +2921,7 @@ msgstr ""
 msgid "Max Value"
 msgstr ""
 
-#: packages/admin/src/components/PortableTextEditor.tsx:1799
+#: packages/admin/src/components/PortableTextEditor.tsx:1943
 #: packages/admin/src/components/Sidebar.tsx:185
 #: packages/admin/src/components/WordPressImport.tsx:1164
 msgid "Media"
@@ -2925,7 +2961,7 @@ msgstr "Media irakurri"
 msgid "Media Write"
 msgstr "Media idatzi"
 
-#: packages/admin/src/components/PortableTextEditor.tsx:738
+#: packages/admin/src/components/PortableTextEditor.tsx:867
 msgid "Medium section heading"
 msgstr "Atal-goiburu ertaina"
 
@@ -3250,7 +3286,7 @@ msgstr ""
 msgid "No headings in document"
 msgstr ""
 
-#: packages/admin/src/components/PortableTextEditor.tsx:1406
+#: packages/admin/src/components/PortableTextEditor.tsx:1550
 #: packages/admin/src/components/RepeaterField.tsx:160
 msgid "No items yet"
 msgstr ""
@@ -3323,7 +3359,7 @@ msgstr ""
 msgid "No redirects yet"
 msgstr ""
 
-#: packages/admin/src/components/PortableTextEditor.tsx:968
+#: packages/admin/src/components/PortableTextEditor.tsx:1112
 msgid "No results"
 msgstr "Emaitzarik ez"
 
@@ -3380,7 +3416,7 @@ msgid "Number of posts to show per page on list views"
 msgstr ""
 
 #: packages/admin/src/components/editor/BlockMenu.tsx:109
-#: packages/admin/src/components/PortableTextEditor.tsx:767
+#: packages/admin/src/components/PortableTextEditor.tsx:896
 msgid "Numbered List"
 msgstr "Zenbakitutako zerrenda"
 
@@ -3752,7 +3788,7 @@ msgid "Quick create byline"
 msgstr ""
 
 #: packages/admin/src/components/editor/BlockMenu.tsx:85
-#: packages/admin/src/components/PortableTextEditor.tsx:777
+#: packages/admin/src/components/PortableTextEditor.tsx:906
 msgid "Quote"
 msgstr "Zita"
 
@@ -3872,7 +3908,7 @@ msgid "Remove Image?"
 msgstr ""
 
 #. placeholder {0}: index + 1
-#: packages/admin/src/components/PortableTextEditor.tsx:1522
+#: packages/admin/src/components/PortableTextEditor.tsx:1666
 #: packages/admin/src/components/RepeaterField.tsx:270
 msgid "Remove item {0}"
 msgstr ""
@@ -4276,7 +4312,7 @@ msgstr ""
 msgid "Searchable"
 msgstr ""
 
-#: packages/admin/src/components/PortableTextEditor.tsx:1809
+#: packages/admin/src/components/PortableTextEditor.tsx:1953
 msgid "Section"
 msgstr "Atala"
 
@@ -4673,7 +4709,7 @@ msgstr "Sluga"
 msgid "Slug copied to clipboard"
 msgstr ""
 
-#: packages/admin/src/components/PortableTextEditor.tsx:748
+#: packages/admin/src/components/PortableTextEditor.tsx:877
 msgid "Small section heading"
 msgstr "Atal-goiburu txikia"
 
@@ -4773,6 +4809,10 @@ msgstr ""
 
 #: packages/admin/src/components/ThemeToggle.tsx:24
 msgid "System ({resolvedLabel})"
+msgstr ""
+
+#: packages/admin/src/components/PortableTextEditor.tsx:936
+msgid "Table"
 msgstr ""
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:173
@@ -5026,6 +5066,10 @@ msgstr ""
 #: packages/admin/src/components/AdminCommandPalette.tsx:460
 msgid "to select"
 msgstr "aukeratzeko"
+
+#: packages/admin/src/components/PortableTextEditor.tsx:2551
+msgid "Toggle header row"
+msgstr ""
 
 #: packages/admin/src/components/ThemeToggle.tsx:30
 #: packages/admin/src/components/ThemeToggle.tsx:41
