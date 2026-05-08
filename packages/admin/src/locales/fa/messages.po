@@ -510,7 +510,7 @@ msgid "Active"
 msgstr "فعال"
 
 #: packages/admin/src/components/AllowedTypesEditor.tsx:171
-#: packages/admin/src/components/ContentEditor.tsx:1944
+#: packages/admin/src/components/ContentEditor.tsx:1950
 #: packages/admin/src/components/MenuEditor.tsx:354
 #: packages/admin/src/components/TaxonomyManager.tsx:360
 #: packages/admin/src/components/TaxonomyManager.tsx:812
@@ -970,7 +970,7 @@ msgstr "به‌صورت خودکار از نام تولید شده (قابل و�
 msgid "Autosave failed"
 msgstr ""
 
-#: packages/admin/src/components/ContentEditor.tsx:617
+#: packages/admin/src/components/ContentEditor.tsx:614
 msgid "Autosave status"
 msgstr ""
 
@@ -993,7 +993,7 @@ msgstr ""
 msgid "Back"
 msgstr "بازگشت"
 
-#: packages/admin/src/components/ContentEditor.tsx:586
+#: packages/admin/src/components/ContentEditor.tsx:583
 msgid "Back to {collectionLabel} list"
 msgstr "بازگشت به لیست {collectionLabel}"
 
@@ -1015,7 +1015,7 @@ msgid "Back to marketplace"
 msgstr "بازگشت به فروشگاه"
 
 #: packages/admin/src/components/SectionEditor.tsx:73
-#: packages/admin/src/components/SectionEditor.tsx:176
+#: packages/admin/src/components/SectionEditor.tsx:174
 msgid "Back to sections"
 msgstr "بازگشت به بخش‌ها"
 
@@ -1081,7 +1081,7 @@ msgstr "قالب‌ها را انتخاب کرده، و با محتوای خود
 msgid "Bullet List"
 msgstr "لیست نشانه‌دار"
 
-#: packages/admin/src/components/ContentEditor.tsx:980
+#: packages/admin/src/components/ContentEditor.tsx:986
 #: packages/admin/src/components/Sidebar.tsx:206
 msgid "Bylines"
 msgstr "نام نگارندگان"
@@ -1104,11 +1104,11 @@ msgstr "می‌تواند محتوا را مشاهده کند"
 
 #: packages/admin/src/components/CapabilityConsentDialog.tsx:139
 #: packages/admin/src/components/ConfirmDialog.tsx:57
-#: packages/admin/src/components/ContentEditor.tsx:679
-#: packages/admin/src/components/ContentEditor.tsx:894
-#: packages/admin/src/components/ContentEditor.tsx:946
-#: packages/admin/src/components/ContentEditor.tsx:2047
-#: packages/admin/src/components/ContentEditor.tsx:2100
+#: packages/admin/src/components/ContentEditor.tsx:676
+#: packages/admin/src/components/ContentEditor.tsx:900
+#: packages/admin/src/components/ContentEditor.tsx:952
+#: packages/admin/src/components/ContentEditor.tsx:2053
+#: packages/admin/src/components/ContentEditor.tsx:2106
 #: packages/admin/src/components/ContentList.tsx:559
 #: packages/admin/src/components/ContentList.tsx:630
 #: packages/admin/src/components/ContentPickerModal.tsx:248
@@ -1189,8 +1189,8 @@ msgid "Categories ({0})"
 msgstr "دسته‌ها ({0})"
 
 #: packages/admin/src/components/BlockKitMediaPickerField.tsx:68
-#: packages/admin/src/components/ContentEditor.tsx:1630
-#: packages/admin/src/components/ContentEditor.tsx:1803
+#: packages/admin/src/components/ContentEditor.tsx:1636
+#: packages/admin/src/components/ContentEditor.tsx:1809
 #: packages/admin/src/components/FieldEditor.tsx:402
 #: packages/admin/src/components/SeoImageField.tsx:47
 msgid "Change"
@@ -1367,7 +1367,7 @@ msgstr "مجموعه‌ها"
 msgid "Collections created:"
 msgstr "مجموعه‌های ساخته‌شده:"
 
-#: packages/admin/src/components/SectionEditor.tsx:268
+#: packages/admin/src/components/SectionEditor.tsx:273
 msgid "Comma-separated keywords for search."
 msgstr "کلمات کلیدی جداشده با کاما برای جستجو."
 
@@ -1433,7 +1433,7 @@ msgstr "متصل شده در {0}"
 #: packages/admin/src/components/comments/CommentInbox.tsx:293
 #: packages/admin/src/components/Dashboard.tsx:164
 #: packages/admin/src/components/PortableTextEditor.tsx:1952
-#: packages/admin/src/components/SectionEditor.tsx:196
+#: packages/admin/src/components/SectionEditor.tsx:194
 #: packages/admin/src/components/Sidebar.tsx:412
 #: packages/admin/src/components/Widgets.tsx:819
 msgid "Content"
@@ -1575,7 +1575,7 @@ msgstr ""
 msgid "Count"
 msgstr "تعداد"
 
-#: packages/admin/src/components/ContentEditor.tsx:2071
+#: packages/admin/src/components/ContentEditor.tsx:2077
 #: packages/admin/src/components/MenuList.tsx:175
 #: packages/admin/src/components/Redirects.tsx:184
 #: packages/admin/src/components/Sections.tsx:212
@@ -1611,7 +1611,7 @@ msgstr "ساخت حساب کاربری"
 msgid "Create an account"
 msgstr "ساخت حساب کاربری"
 
-#: packages/admin/src/components/ContentEditor.tsx:2019
+#: packages/admin/src/components/ContentEditor.tsx:2025
 #: packages/admin/src/routes/bylines.tsx:247
 msgid "Create byline"
 msgstr "ساخت نگارنده"
@@ -1746,7 +1746,7 @@ msgid "Created At"
 msgstr "تاریخ ساخت"
 
 #. placeholder {0}: new Date(item.createdAt).toLocaleString()
-#: packages/admin/src/components/ContentEditor.tsx:914
+#: packages/admin/src/components/ContentEditor.tsx:920
 msgid "Created: {0}"
 msgstr "ساخته شده در: {0}"
 
@@ -1754,7 +1754,7 @@ msgstr "ساخته شده در: {0}"
 msgid "Creating collections and fields..."
 msgstr "در حال ساخت مجموعه‌ها و فیلدها..."
 
-#: packages/admin/src/components/ContentEditor.tsx:2071
+#: packages/admin/src/components/ContentEditor.tsx:2077
 #: packages/admin/src/components/MenuList.tsx:175
 #: packages/admin/src/components/Redirects.tsx:181
 #: packages/admin/src/components/Sections.tsx:212
@@ -1784,7 +1784,7 @@ msgstr ""
 msgid "Custom robots.txt content. Leave empty to use the default."
 msgstr "محتوای سفارشی robots.txt. برای استفاده از پیش‌فرض خالی بگذارید."
 
-#: packages/admin/src/components/SectionEditor.tsx:186
+#: packages/admin/src/components/SectionEditor.tsx:184
 msgid "Custom Section"
 msgstr "بخش سفارشی"
 
@@ -2031,12 +2031,12 @@ msgstr ""
 msgid "Describe this image for accessibility"
 msgstr "این تصویر را برای دسترسی‌پذیری توصیف کنید"
 
-#: packages/admin/src/components/SectionEditor.tsx:257
+#: packages/admin/src/components/SectionEditor.tsx:262
 msgid "Describe what this section is for..."
 msgstr "توضیح دهید این بخش برای چیست..."
 
 #: packages/admin/src/components/ContentTypeEditor.tsx:415
-#: packages/admin/src/components/SectionEditor.tsx:254
+#: packages/admin/src/components/SectionEditor.tsx:259
 #: packages/admin/src/components/Sections.tsx:200
 #: packages/admin/src/components/Widgets.tsx:373
 msgid "Description"
@@ -2122,12 +2122,12 @@ msgstr ""
 msgid "Disabling..."
 msgstr ""
 
-#: packages/admin/src/components/ContentEditor.tsx:664
-#: packages/admin/src/components/ContentEditor.tsx:686
+#: packages/admin/src/components/ContentEditor.tsx:661
+#: packages/admin/src/components/ContentEditor.tsx:683
 msgid "Discard changes"
 msgstr "صرف‌نظر از تغییرات"
 
-#: packages/admin/src/components/ContentEditor.tsx:670
+#: packages/admin/src/components/ContentEditor.tsx:667
 msgid "Discard draft changes?"
 msgstr "صرف‌نظر از تغییرات پیش‌نویس؟"
 
@@ -2140,8 +2140,8 @@ msgstr "رد کردن"
 msgid "Display a navigation menu"
 msgstr "نمایش فهرستی ناوبری"
 
-#: packages/admin/src/components/ContentEditor.tsx:2022
-#: packages/admin/src/components/ContentEditor.tsx:2084
+#: packages/admin/src/components/ContentEditor.tsx:2028
+#: packages/admin/src/components/ContentEditor.tsx:2090
 #: packages/admin/src/routes/bylines.tsx:252
 msgid "Display name"
 msgstr "نام نمایشی"
@@ -2160,7 +2160,7 @@ msgstr "اندازه نمایش"
 msgid "Displayed below the image as a visible caption."
 msgstr "به‌عنوان زیرنویس قابل مشاهده زیر تصویر نمایش داده می‌شود."
 
-#: packages/admin/src/components/ContentEditor.tsx:640
+#: packages/admin/src/components/ContentEditor.tsx:637
 msgid "Distraction-free mode (⌘⇧\\)"
 msgstr "حالت بدون حواس‌پرتی (⌘⇧\\)"
 
@@ -2197,7 +2197,7 @@ msgstr "حساب کاربری ندارید؟ <0>ثبت‌نام</0>"
 msgid "Done"
 msgstr "انجام شد"
 
-#: packages/admin/src/components/ContentEditor.tsx:1965
+#: packages/admin/src/components/ContentEditor.tsx:1971
 msgid "Down"
 msgstr "پایین"
 
@@ -2209,7 +2209,7 @@ msgstr "در حال دریافت"
 msgid "draft"
 msgstr "پیش‌نویس"
 
-#: packages/admin/src/components/ContentEditor.tsx:845
+#: packages/admin/src/components/ContentEditor.tsx:851
 #: packages/admin/src/components/ContentPickerModal.tsx:212
 msgid "Draft"
 msgstr "پیش‌نویس"
@@ -2286,7 +2286,7 @@ msgstr "مثلاً CI/CD Pipeline"
 msgid "e.g., MacBook Pro, iPhone"
 msgstr "مثلاً MacBook Pro، iPhone"
 
-#: packages/admin/src/components/ContentEditor.tsx:1974
+#: packages/admin/src/components/ContentEditor.tsx:1980
 #: packages/admin/src/components/editor/PluginBlockNode.tsx:367
 #: packages/admin/src/components/editor/PluginBlockNode.tsx:368
 #: packages/admin/src/components/MenuEditor.tsx:450
@@ -2313,7 +2313,7 @@ msgstr "ویرایش {0}"
 msgid "Edit {0} field"
 msgstr ""
 
-#: packages/admin/src/components/ContentEditor.tsx:603
+#: packages/admin/src/components/ContentEditor.tsx:600
 msgid "Edit {collectionLabel}"
 msgstr "ویرایش {collectionLabel}"
 
@@ -2321,7 +2321,7 @@ msgstr "ویرایش {collectionLabel}"
 msgid "Edit {title}"
 msgstr "ویرایش {title}"
 
-#: packages/admin/src/components/ContentEditor.tsx:2081
+#: packages/admin/src/components/ContentEditor.tsx:2087
 msgid "Edit byline"
 msgstr "ویرایش نگارنده"
 
@@ -2458,7 +2458,7 @@ msgid "Enabled"
 msgstr "فعال"
 
 #. placeholder {0}: label.toLowerCase()
-#: packages/admin/src/components/ContentEditor.tsx:1205
+#: packages/admin/src/components/ContentEditor.tsx:1211
 msgid "Enter {0}..."
 msgstr "{0} را وارد کنید..."
 
@@ -2467,7 +2467,7 @@ msgstr "{0} را وارد کنید..."
 msgid "Enter a URL (https://…) or a relative path (/…)"
 msgstr "یک آدرس (https://…) یا یک مسیر نسبی (/…) وارد کنید"
 
-#: packages/admin/src/components/ContentEditor.tsx:1453
+#: packages/admin/src/components/ContentEditor.tsx:1459
 msgid "Enter a valid URL (e.g. https://example.com)"
 msgstr "یک آدرس وب (URL) معتبر وارد کنید (مثلاً https://example.com)"
 
@@ -2475,7 +2475,7 @@ msgstr "یک آدرس وب (URL) معتبر وارد کنید (مثلاً https:
 msgid "Enter credentials manually"
 msgstr "اطلاعات ورود را به‌صورت دستی وارد کنید"
 
-#: packages/admin/src/components/ContentEditor.tsx:639
+#: packages/admin/src/components/ContentEditor.tsx:636
 msgid "Enter distraction-free mode"
 msgstr "ورود به حالت بدون حواس‌پرتی"
 
@@ -2483,7 +2483,7 @@ msgstr "ورود به حالت بدون حواس‌پرتی"
 msgid "Enter email"
 msgstr "ایمیل را وارد کنید"
 
-#: packages/admin/src/components/ContentEditor.tsx:1227
+#: packages/admin/src/components/ContentEditor.tsx:1233
 msgid "Enter markdown content..."
 msgstr "محتوای ی markdown را وارد کنید..."
 
@@ -2541,7 +2541,7 @@ msgstr ""
 msgid "Exists"
 msgstr "وجود دارد"
 
-#: packages/admin/src/components/ContentEditor.tsx:597
+#: packages/admin/src/components/ContentEditor.tsx:594
 msgid "Exit distraction-free mode"
 msgstr "خروج از حالت بدون حواس‌پرتی"
 
@@ -2606,7 +2606,7 @@ msgstr ""
 msgid "Failed to create admin"
 msgstr ""
 
-#: packages/admin/src/components/ContentEditor.tsx:2065
+#: packages/admin/src/components/ContentEditor.tsx:2071
 msgid "Failed to create byline"
 msgstr "ساخت نگارنده ناموفق بود"
 
@@ -2958,7 +2958,7 @@ msgstr ""
 msgid "Failed to update {0}"
 msgstr "به‌روزرسانی {0} ناموفق بود"
 
-#: packages/admin/src/components/ContentEditor.tsx:2115
+#: packages/admin/src/components/ContentEditor.tsx:2121
 msgid "Failed to update byline"
 msgstr "به‌روزرسانی نگارنده ناموفق بود"
 
@@ -3178,7 +3178,7 @@ msgstr "ارتفاع"
 msgid "Hero Banner"
 msgstr ""
 
-#: packages/admin/src/components/SectionEditor.tsx:266
+#: packages/admin/src/components/SectionEditor.tsx:271
 msgid "hero, banner, cta"
 msgstr ""
 
@@ -3455,7 +3455,7 @@ msgstr "عدد صحیح"
 msgid "Invalid invite link"
 msgstr ""
 
-#: packages/admin/src/components/ContentEditor.tsx:1522
+#: packages/admin/src/components/ContentEditor.tsx:1528
 msgid "Invalid JSON"
 msgstr "JSON نامعتبر"
 
@@ -3517,7 +3517,7 @@ msgid "JSON"
 msgstr "JSON"
 
 #: packages/admin/src/components/MarketplacePluginDetail.tsx:294
-#: packages/admin/src/components/SectionEditor.tsx:263
+#: packages/admin/src/components/SectionEditor.tsx:268
 #: packages/admin/src/components/ThemeMarketplaceDetail.tsx:189
 msgid "Keywords"
 msgstr "کلمات کلیدی"
@@ -3640,7 +3640,7 @@ msgstr "لینک‌ها"
 msgid "List view"
 msgstr "نمای لیستی"
 
-#: packages/admin/src/components/ContentEditor.tsx:718
+#: packages/admin/src/components/ContentEditor.tsx:715
 msgid "Live View"
 msgstr "نمای زنده"
 
@@ -4021,13 +4021,13 @@ msgstr "انتقال {title} به سطل زباله"
 msgid "Move down"
 msgstr "انتقال به پایین"
 
-#: packages/admin/src/components/ContentEditor.tsx:931
-#: packages/admin/src/components/ContentEditor.tsx:953
+#: packages/admin/src/components/ContentEditor.tsx:937
+#: packages/admin/src/components/ContentEditor.tsx:959
 #: packages/admin/src/components/ContentList.tsx:566
 msgid "Move to Trash"
 msgstr "انتقال به سطل زباله"
 
-#: packages/admin/src/components/ContentEditor.tsx:937
+#: packages/admin/src/components/ContentEditor.tsx:943
 #: packages/admin/src/components/ContentList.tsx:551
 msgid "Move to Trash?"
 msgstr "انتقال به سطل زباله؟"
@@ -4098,7 +4098,7 @@ msgstr "جدید"
 msgid "New {0}"
 msgstr "{0} جدید"
 
-#: packages/admin/src/components/ContentEditor.tsx:603
+#: packages/admin/src/components/ContentEditor.tsx:600
 msgid "New {collectionLabel}"
 msgstr "{collectionLabel} جدید"
 
@@ -4197,7 +4197,7 @@ msgstr "هنوز دیدگاه تأییدشده‌ای وجود ندارد."
 msgid "No bylines found"
 msgstr ""
 
-#: packages/admin/src/components/ContentEditor.tsx:2006
+#: packages/admin/src/components/ContentEditor.tsx:2012
 msgid "No bylines selected."
 msgstr "هیچ نگارنده‌ای انتخاب نشده."
 
@@ -4533,7 +4533,7 @@ msgstr "فهرست مطالب"
 msgid "Overrides the page title in search engine results"
 msgstr "عنوان صفحه را در نتایج موتورهای جستجو بازنویسی می‌کند"
 
-#: packages/admin/src/components/ContentEditor.tsx:968
+#: packages/admin/src/components/ContentEditor.tsx:974
 msgid "Ownership"
 msgstr "مالکیت"
 
@@ -4655,7 +4655,7 @@ msgstr "در انتظار"
 msgid "Pending"
 msgstr "در انتظار"
 
-#: packages/admin/src/components/ContentEditor.tsx:843
+#: packages/admin/src/components/ContentEditor.tsx:849
 msgid "Pending changes"
 msgstr "تغییرات در انتظار"
 
@@ -4776,7 +4776,7 @@ msgstr "در حال آماده‌سازی دریافت فایل‌ها از ور
 msgid "Preparing..."
 msgstr "در حال آماده‌سازی..."
 
-#: packages/admin/src/components/ContentEditor.tsx:653
+#: packages/admin/src/components/ContentEditor.tsx:650
 #: packages/admin/src/components/ContentTypeEditor.tsx:81
 #: packages/admin/src/components/MediaLibrary.tsx:415
 msgid "Preview"
@@ -4786,7 +4786,7 @@ msgstr "پیش‌نمایش"
 msgid "Preview content before publishing"
 msgstr "پیش‌نمایش محتوا قبل از انتشار"
 
-#: packages/admin/src/components/ContentEditor.tsx:653
+#: packages/admin/src/components/ContentEditor.tsx:650
 msgid "Preview draft"
 msgstr "پیش‌نمایش پیش‌نویس"
 
@@ -4811,12 +4811,12 @@ msgstr "ناوبری اصلی"
 msgid "Provider:"
 msgstr "ارائه‌دهنده:"
 
-#: packages/admin/src/components/ContentEditor.tsx:708
-#: packages/admin/src/components/ContentEditor.tsx:824
+#: packages/admin/src/components/ContentEditor.tsx:705
+#: packages/admin/src/components/ContentEditor.tsx:830
 msgid "Publish"
 msgstr "انتشار"
 
-#: packages/admin/src/components/ContentEditor.tsx:698
+#: packages/admin/src/components/ContentEditor.tsx:695
 msgid "Publish changes"
 msgstr "انتشار تغییرات"
 
@@ -4824,7 +4824,7 @@ msgstr "انتشار تغییرات"
 msgid "published"
 msgstr "منتشرشده"
 
-#: packages/admin/src/components/ContentEditor.tsx:839
+#: packages/admin/src/components/ContentEditor.tsx:845
 #: packages/admin/src/components/ContentPickerModal.tsx:209
 #: packages/admin/src/components/Dashboard.tsx:187
 #: packages/admin/src/router.tsx:744
@@ -4840,7 +4840,7 @@ msgstr "منتشرشده در {0}"
 msgid "Published At"
 msgstr "تاریخ انتشار"
 
-#: packages/admin/src/components/ContentEditor.tsx:2014
+#: packages/admin/src/components/ContentEditor.tsx:2020
 msgid "Quick create byline"
 msgstr "ساخت سریع نگارنده"
 
@@ -4951,7 +4951,7 @@ msgid "Registration was cancelled or timed out. Please try again."
 msgstr "ثبت‌نام لغو شد یا زمان آن به پایان رسید. لطفاً دوباره تلاش کنید."
 
 #: packages/admin/src/components/BlockKitMediaPickerField.tsx:76
-#: packages/admin/src/components/ContentEditor.tsx:1983
+#: packages/admin/src/components/ContentEditor.tsx:1989
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:177
 #: packages/admin/src/components/PortableTextEditor.tsx:2921
 #: packages/admin/src/components/settings/GeneralSettings.tsx:202
@@ -4972,7 +4972,7 @@ msgstr "حذف {0}"
 msgid "Remove {entry}"
 msgstr ""
 
-#: packages/admin/src/components/ContentEditor.tsx:1811
+#: packages/admin/src/components/ContentEditor.tsx:1817
 msgid "Remove {label}"
 msgstr ""
 
@@ -4984,7 +4984,7 @@ msgstr "حذف دامنه"
 msgid "Remove Domain?"
 msgstr "حذف دامنه؟"
 
-#: packages/admin/src/components/ContentEditor.tsx:1638
+#: packages/admin/src/components/ContentEditor.tsx:1644
 #: packages/admin/src/components/SeoImageField.tsx:55
 msgid "Remove image"
 msgstr "حذف تصویر"
@@ -5203,7 +5203,7 @@ msgstr "نقش"
 msgid "Role {role}"
 msgstr "نقش {role}"
 
-#: packages/admin/src/components/ContentEditor.tsx:1988
+#: packages/admin/src/components/ContentEditor.tsx:1994
 msgid "Role label"
 msgstr "برچسب نقش"
 
@@ -5214,7 +5214,7 @@ msgstr "برچسب نقش"
 msgid "Same window"
 msgstr "همین پنجره"
 
-#: packages/admin/src/components/ContentEditor.tsx:2121
+#: packages/admin/src/components/ContentEditor.tsx:2127
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:349
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:519
 #: packages/admin/src/components/editor/ImageNode.tsx:235
@@ -5264,13 +5264,13 @@ msgstr "ذخیره تنظیمات"
 msgid "Save Social Links"
 msgstr "ذخیره لینک‌های اجتماعی"
 
-#: packages/admin/src/components/ContentEditor.tsx:628
+#: packages/admin/src/components/ContentEditor.tsx:625
 #: packages/admin/src/components/SaveButton.tsx:42
 msgid "Saved"
 msgstr "ذخیره شد"
 
-#: packages/admin/src/components/ContentEditor.tsx:623
-#: packages/admin/src/components/ContentEditor.tsx:2121
+#: packages/admin/src/components/ContentEditor.tsx:620
+#: packages/admin/src/components/ContentEditor.tsx:2127
 #: packages/admin/src/components/ContentTypeEditor.tsx:560
 #: packages/admin/src/components/FieldEditor.tsx:659
 #: packages/admin/src/components/MediaDetailPanel.tsx:241
@@ -5290,15 +5290,15 @@ msgstr "ذخیره شد"
 msgid "Saving..."
 msgstr "درحال ذخیره‌سازی …"
 
-#: packages/admin/src/components/ContentEditor.tsx:883
+#: packages/admin/src/components/ContentEditor.tsx:889
 msgid "Schedule"
 msgstr "زمان‌بندی"
 
-#: packages/admin/src/components/ContentEditor.tsx:869
+#: packages/admin/src/components/ContentEditor.tsx:875
 msgid "Schedule for"
 msgstr "زمان‌بندی برای"
 
-#: packages/admin/src/components/ContentEditor.tsx:906
+#: packages/admin/src/components/ContentEditor.tsx:912
 msgid "Schedule for later"
 msgstr "زمان‌بندی برای بعد"
 
@@ -5306,13 +5306,13 @@ msgstr "زمان‌بندی برای بعد"
 msgid "scheduled"
 msgstr "زمان‌بندی‌شده"
 
-#: packages/admin/src/components/ContentEditor.tsx:846
+#: packages/admin/src/components/ContentEditor.tsx:852
 #: packages/admin/src/router.tsx:795
 msgid "Scheduled"
 msgstr "زمان‌بندی‌شده"
 
 #. placeholder {0}: formatScheduledDate(item.scheduledAt)
-#: packages/admin/src/components/ContentEditor.tsx:856
+#: packages/admin/src/components/ContentEditor.tsx:862
 msgid "Scheduled for: {0}"
 msgstr "زمان‌بندی شده برای: {0}"
 
@@ -5473,7 +5473,7 @@ msgstr "بخش ساخته شد"
 msgid "Section deleted"
 msgstr "بخش حذف شد"
 
-#: packages/admin/src/components/SectionEditor.tsx:228
+#: packages/admin/src/components/SectionEditor.tsx:233
 msgid "Section Details"
 msgstr "جزئیات بخش"
 
@@ -5485,7 +5485,7 @@ msgstr "بخش یافت نشد"
 msgid "Section saved"
 msgstr "بخش ذخیره شد"
 
-#: packages/admin/src/components/SectionEditor.tsx:234
+#: packages/admin/src/components/SectionEditor.tsx:239
 msgid "Section title"
 msgstr "عنوان بخش"
 
@@ -5549,9 +5549,9 @@ msgid "Select"
 msgstr "انتخاب"
 
 #: packages/admin/src/components/BlockKitMediaPickerField.tsx:100
-#: packages/admin/src/components/ContentEditor.tsx:1665
-#: packages/admin/src/components/ContentEditor.tsx:1823
-#: packages/admin/src/components/ContentEditor.tsx:1839
+#: packages/admin/src/components/ContentEditor.tsx:1671
+#: packages/admin/src/components/ContentEditor.tsx:1829
+#: packages/admin/src/components/ContentEditor.tsx:1845
 msgid "Select {label}"
 msgstr "انتخاب {label}"
 
@@ -5567,11 +5567,11 @@ msgstr ""
 msgid "Select all"
 msgstr "انتخاب همه"
 
-#: packages/admin/src/components/ContentEditor.tsx:1931
+#: packages/admin/src/components/ContentEditor.tsx:1937
 msgid "Select byline"
 msgstr ""
 
-#: packages/admin/src/components/ContentEditor.tsx:1928
+#: packages/admin/src/components/ContentEditor.tsx:1934
 msgid "Select byline..."
 msgstr "انتخاب نگارنده..."
 
@@ -5589,7 +5589,7 @@ msgstr "انتخاب محتوا"
 msgid "Select Favicon"
 msgstr "انتخاب فاوآیکون"
 
-#: packages/admin/src/components/ContentEditor.tsx:1827
+#: packages/admin/src/components/ContentEditor.tsx:1833
 msgid "Select file"
 msgstr ""
 
@@ -5597,7 +5597,7 @@ msgstr ""
 msgid "Select File"
 msgstr ""
 
-#: packages/admin/src/components/ContentEditor.tsx:1653
+#: packages/admin/src/components/ContentEditor.tsx:1659
 msgid "Select image"
 msgstr "انتخاب تصویر"
 
@@ -5680,7 +5680,7 @@ msgstr "ارسال ایمیل آزمایشی"
 msgid "Sending..."
 msgstr "در حال ارسال..."
 
-#: packages/admin/src/components/ContentEditor.tsx:1022
+#: packages/admin/src/components/ContentEditor.tsx:1028
 #: packages/admin/src/components/ContentTypeEditor.tsx:474
 #: packages/admin/src/components/Settings.tsx:81
 msgid "SEO"
@@ -5863,15 +5863,15 @@ msgstr "رد کردن درون‌ریزی رسانه"
 msgid "Skipped"
 msgstr "رد شده"
 
-#: packages/admin/src/components/ContentEditor.tsx:827
-#: packages/admin/src/components/ContentEditor.tsx:2030
-#: packages/admin/src/components/ContentEditor.tsx:2092
+#: packages/admin/src/components/ContentEditor.tsx:833
+#: packages/admin/src/components/ContentEditor.tsx:2036
+#: packages/admin/src/components/ContentEditor.tsx:2098
 #: packages/admin/src/components/ContentTypeEditor.tsx:111
 #: packages/admin/src/components/ContentTypeEditor.tsx:404
 #: packages/admin/src/components/ContentTypeList.tsx:97
 #: packages/admin/src/components/FieldEditor.tsx:228
 #: packages/admin/src/components/FieldEditor.tsx:418
-#: packages/admin/src/components/SectionEditor.tsx:239
+#: packages/admin/src/components/SectionEditor.tsx:244
 #: packages/admin/src/components/Sections.tsx:184
 #: packages/admin/src/components/TaxonomyManager.tsx:396
 #: packages/admin/src/routes/bylines.tsx:257
@@ -5927,7 +5927,7 @@ msgstr "مرتب‌سازی قالب‌ها"
 #: packages/admin/src/components/MarketplacePluginDetail.tsx:215
 #: packages/admin/src/components/PluginManager.tsx:444
 #: packages/admin/src/components/Redirects.tsx:440
-#: packages/admin/src/components/SectionEditor.tsx:274
+#: packages/admin/src/components/SectionEditor.tsx:279
 msgid "Source"
 msgstr "منبع"
 
@@ -5957,7 +5957,7 @@ msgstr ""
 msgid "Start Import"
 msgstr "شروع درون‌ریزی"
 
-#: packages/admin/src/components/ContentEditor.tsx:833
+#: packages/admin/src/components/ContentEditor.tsx:839
 #: packages/admin/src/components/ContentList.tsx:218
 #: packages/admin/src/components/ContentTypeEditor.tsx:117
 #: packages/admin/src/components/Redirects.tsx:445
@@ -6131,7 +6131,7 @@ msgid "Theme"
 msgstr "پوسته"
 
 #. placeholder {0}: section.themeId
-#: packages/admin/src/components/SectionEditor.tsx:287
+#: packages/admin/src/components/SectionEditor.tsx:292
 msgid "Theme ID: {0}"
 msgstr "شناسه قالب: {0}"
 
@@ -6139,7 +6139,7 @@ msgstr "شناسه قالب: {0}"
 msgid "Theme not found"
 msgstr "قالب یافت نشد"
 
-#: packages/admin/src/components/SectionEditor.tsx:186
+#: packages/admin/src/components/SectionEditor.tsx:184
 msgid "Theme Section"
 msgstr "بخش قالب"
 
@@ -6164,12 +6164,12 @@ msgstr ""
 msgid "This field does not accept {sniffedMime} files."
 msgstr ""
 
-#: packages/admin/src/components/ContentEditor.tsx:1669
-#: packages/admin/src/components/ContentEditor.tsx:1842
+#: packages/admin/src/components/ContentEditor.tsx:1675
+#: packages/admin/src/components/ContentEditor.tsx:1848
 msgid "This field is required"
 msgstr "این فیلد الزامی است"
 
-#: packages/admin/src/components/SectionEditor.tsx:281
+#: packages/admin/src/components/SectionEditor.tsx:286
 msgid "This is a custom section."
 msgstr "این یک بخش سفارشی است."
 
@@ -6201,11 +6201,11 @@ msgstr "این قانون    تغییر مسیر برای همیشه حذف خو
 msgid "This removes the byline profile. Content byline links are removed and lead pointers are cleared."
 msgstr ""
 
-#: packages/admin/src/components/SectionEditor.tsx:278
+#: packages/admin/src/components/SectionEditor.tsx:283
 msgid "This section is provided by the theme. Editing will create a custom copy that overrides the theme version."
 msgstr "این بخش توسط قالب ارائه شده. ویرایش یک کپی سفارشی می‌سازد که نسخه قالب را بازنویسی می‌کند."
 
-#: packages/admin/src/components/SectionEditor.tsx:283
+#: packages/admin/src/components/SectionEditor.tsx:288
 msgid "This section was imported from another system."
 msgstr "این بخش از سیستم دیگری درون‌ریزی شده است."
 
@@ -6217,7 +6217,7 @@ msgstr ""
 msgid "This will grant CLI access with your permissions."
 msgstr "این دسترسی خط فرمان با مجوزهای شما را اعطا می‌کند."
 
-#: packages/admin/src/components/ContentEditor.tsx:940
+#: packages/admin/src/components/ContentEditor.tsx:946
 msgid "This will move the item to trash. You can restore it later from the trash."
 msgstr "این مورد به سطل زباله منتقل خواهد شد. می‌توانید بعداً آن را از سطل زباله بازیابی کنید."
 
@@ -6239,7 +6239,7 @@ msgstr "این دیدگاه برای همیشه حذف خواهد شد. این �
 msgid "This will remove the plugin and its bundle from your site."
 msgstr "این افزونه و بسته آن را از وبسایت شما حذف می‌کند."
 
-#: packages/admin/src/components/ContentEditor.tsx:673
+#: packages/admin/src/components/ContentEditor.tsx:670
 msgid "This will revert to the published version. Your draft changes will be lost."
 msgstr "این به نسخه منتشرشده بازمی‌گردد. تغییرات پیش‌نویس شما از بین خواهد رفت."
 
@@ -6257,7 +6257,7 @@ msgstr "منطقه زمانی برای نمایش تاریخ‌ها (مثلاً 
 
 #: packages/admin/src/components/ContentList.tsx:212
 #: packages/admin/src/components/ContentList.tsx:343
-#: packages/admin/src/components/SectionEditor.tsx:231
+#: packages/admin/src/components/SectionEditor.tsx:236
 #: packages/admin/src/components/Sections.tsx:170
 #: packages/admin/src/components/Widgets.tsx:811
 msgid "Title"
@@ -6424,8 +6424,8 @@ msgstr "عدم تطابق نوع ({0})"
 msgid "Unable to reach marketplace"
 msgstr "دسترسی به فروشگاه ممکن نیست"
 
-#: packages/admin/src/components/ContentEditor.tsx:2135
-#: packages/admin/src/components/ContentEditor.tsx:2150
+#: packages/admin/src/components/ContentEditor.tsx:2141
+#: packages/admin/src/components/ContentEditor.tsx:2156
 msgid "Unassigned"
 msgstr "بدون تخصیص"
 
@@ -6485,7 +6485,7 @@ msgstr "باز کردن قفل نسبت تصویر"
 msgid "Unnamed passkey"
 msgstr "شاه‌کلید بدون نام"
 
-#: packages/admin/src/components/ContentEditor.tsx:702
+#: packages/admin/src/components/ContentEditor.tsx:699
 msgid "Unpublish"
 msgstr "لغو انتشار"
 
@@ -6497,7 +6497,7 @@ msgstr ""
 msgid "Unregistered Content Tables Found"
 msgstr "جداول محتوای ثبت‌نشده یافت شد"
 
-#: packages/admin/src/components/ContentEditor.tsx:858
+#: packages/admin/src/components/ContentEditor.tsx:864
 msgid "Unschedule"
 msgstr "لغو زمان‌بندی"
 
@@ -6514,7 +6514,7 @@ msgstr ""
 msgid "Untitled"
 msgstr "بی‌نام"
 
-#: packages/admin/src/components/ContentEditor.tsx:1745
+#: packages/admin/src/components/ContentEditor.tsx:1751
 msgid "Untitled file"
 msgstr ""
 
@@ -6523,7 +6523,7 @@ msgstr ""
 msgid "Untitled Widget"
 msgstr ""
 
-#: packages/admin/src/components/ContentEditor.tsx:1962
+#: packages/admin/src/components/ContentEditor.tsx:1968
 msgid "Up"
 msgstr "بالا"
 
@@ -6563,7 +6563,7 @@ msgid "Updated At"
 msgstr "تاریخ به‌روزرسانی"
 
 #. placeholder {0}: new Date(item.updatedAt).toLocaleString()
-#: packages/admin/src/components/ContentEditor.tsx:915
+#: packages/admin/src/components/ContentEditor.tsx:921
 msgid "Updated: {0}"
 msgstr "به‌روزرسانی شده در: {0}"
 
@@ -6707,7 +6707,7 @@ msgstr "از شاه‌کلید ثبت‌شده خود برای ورود امن �
 msgid "Used as the identifier. Lowercase letters, numbers, and underscores only."
 msgstr "به‌عنوان شناسه استفاده می‌شود. فقط حروف کوچک، اعداد و زیرخط."
 
-#: packages/admin/src/components/ContentEditor.tsx:1304
+#: packages/admin/src/components/ContentEditor.tsx:1310
 msgid "Used as the main visual for this post on listing pages and at the top of the post"
 msgstr "به‌عنوان تصویر اصلی این نوشته در صفحات لیست و بالای نوشته استفاده می‌شود"
 
@@ -6719,7 +6719,7 @@ msgstr "توسط صفحه‌خوان‌ها و هنگام عدم بارگذار�
 msgid "Used in URLs and API endpoints"
 msgstr ""
 
-#: packages/admin/src/components/SectionEditor.tsx:249
+#: packages/admin/src/components/SectionEditor.tsx:254
 #: packages/admin/src/components/Sections.tsx:196
 msgid "Used to identify this section. Lowercase letters, numbers, and hyphens only."
 msgstr "برای شناسایی این بخش استفاده می‌شود. فقط حروف کوچک، اعداد و خط تیره."
