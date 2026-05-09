@@ -16,11 +16,34 @@
  */
 
 import type { RecordsJob } from "./env.js";
+import { RECORDS_DO_NAME } from "./records-do.js";
 
 export { RecordsJetstreamDO } from "./records-do.js";
 
+/**
+ * Operational bootstrap route. Hitting `/_admin/start` once after deploy
+ * spins up the Records DO, which opens its outbound WebSocket and starts
+ * ingesting. The DO's WebSocket keeps it alive thereafter. The route is
+ * unauthenticated but returns no operational detail — just a fixed 204 —
+ * so a probing caller learns nothing useful. The action is idempotent on
+ * an already-running DO. Recommended deploy hook:
+ *
+ *   wrangler deploy && curl -X POST https://api.emdashcms.com/_admin/start
+ */
+const BOOTSTRAP_PATH = "/_admin/start";
+
 export default {
-	async fetch(_request: Request, _env: Env, _ctx: ExecutionContext): Promise<Response> {
+	async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
+		const url = new URL(request.url);
+		if (url.pathname === BOOTSTRAP_PATH) {
+			const id = env.RECORDS_DO.idFromName(RECORDS_DO_NAME);
+			const stub = env.RECORDS_DO.get(id);
+			// Fire-and-forget so the response shape doesn't depend on the
+			// DO's status output. Caller gets the same 204 whether the DO
+			// was already running, just woke up, or is mid-startup.
+			ctx.waitUntil(stub.fetch("https://do.internal/bootstrap"));
+			return new Response(null, { status: 204 });
+		}
 		return new Response("emdash-aggregator: not yet implemented", {
 			status: 503,
 			headers: { "content-type": "text/plain" },
@@ -31,7 +54,15 @@ export default {
 		// PDS-verified ingest will land here.
 	},
 
-	async scheduled(_event: ScheduledEvent, _env: Env, _ctx: ExecutionContext): Promise<void> {
-		// 6h reconciliation pass will land here.
+	async scheduled(_event: ScheduledEvent, env: Env, ctx: ExecutionContext): Promise<void> {
+		// DO liveness. The records DO is meant to hold an outbound WebSocket
+		// continuously, but during a Jetstream outage it spends time in
+		// backoff sleeps — that's when CF can evict it. Hitting the DO from
+		// the cron wakes it back up; constructor-time `ingestor.run()`
+		// resumes from the persisted cursor. Reconciliation work will share
+		// this trigger when it lands.
+		const id = env.RECORDS_DO.idFromName(RECORDS_DO_NAME);
+		const stub = env.RECORDS_DO.get(id);
+		ctx.waitUntil(stub.fetch("https://do.internal/liveness"));
 	},
 };
