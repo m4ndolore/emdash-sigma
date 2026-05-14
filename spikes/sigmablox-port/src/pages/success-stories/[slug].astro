@@ -1,0 +1,207 @@
+---
+// Spike — mirrors a Ghost `success-story.hbs` template in Astro.
+//
+// What this is meant to show:
+//   - getEmDashEntry() pulls a row by slug, typed against the seed schema
+//   - PortableText / Image components handle rich content + media
+//   - Inline editing hooks (post.edit.<field>) light up when the admin is open
+//   - getEntryTerms() returns taxonomy terms for the entry
+//   - Astro.cache.set(cacheHint) — required so the query result is cached
+//
+// What this is NOT trying to be: a finished design. The goal of the spike is
+// to confirm that the data shape and helpers work end-to-end.
+
+import { getEmDashEntry, getEntryTerms, decodeSlug } from "emdash";
+import { Image, PortableText } from "emdash/ui";
+
+const slug = decodeSlug(Astro.params.slug);
+
+if (!slug) {
+	return Astro.redirect("/404");
+}
+
+const { entry: story, cacheHint } = await getEmDashEntry("success_stories", slug);
+
+if (!story) {
+	return Astro.redirect("/404");
+}
+
+Astro.cache.set(cacheHint);
+
+// Taxonomy terms — `story.data.id` is the DB ULID (not the slug)
+const industries = await getEntryTerms("success_stories", story.data.id, "industry");
+
+const publishedAt = story.data.publishedAt?.toLocaleDateString("en-US", {
+	year: "numeric",
+	month: "long",
+	day: "numeric",
+});
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>{story.data.title}</title>
+		{story.data.summary && <meta name="description" content={story.data.summary} />}
+	</head>
+	<body>
+		<main class="story">
+			{
+				story.data.hero_image && (
+					<div class="hero" {...story.edit.hero_image}>
+						<Image image={story.data.hero_image} />
+					</div>
+				)
+			}
+
+			<header class="story-header">
+				<h1 {...story.edit.title}>{story.data.title}</h1>
+
+				{
+					story.data.summary && (
+						<p class="summary" {...story.edit.summary}>
+							{story.data.summary}
+						</p>
+					)
+				}
+
+				<dl class="meta">
+					<div>
+						<dt>Company</dt>
+						<dd {...story.edit.company_name}>{story.data.company_name}</dd>
+					</div>
+					{
+						story.data.founder_name && (
+							<div>
+								<dt>Founder</dt>
+								<dd {...story.edit.founder_name}>{story.data.founder_name}</dd>
+							</div>
+						)
+					}
+					{
+						story.data.cohort && (
+							<div>
+								<dt>Cohort</dt>
+								<dd {...story.edit.cohort}>{story.data.cohort}</dd>
+							</div>
+						)
+					}
+					{
+						publishedAt && (
+							<div>
+								<dt>Published</dt>
+								<dd>
+									<time>{publishedAt}</time>
+								</dd>
+							</div>
+						)
+					}
+					{
+						industries.length > 0 && (
+							<div>
+								<dt>Industries</dt>
+								<dd class="industries">
+									{industries.map((i) => (
+										<a href={`/industry/${i.slug}`} class="industry-tag">
+											{i.label}
+										</a>
+									))}
+								</dd>
+							</div>
+						)
+					}
+				</dl>
+			</header>
+
+			<article class="content" {...story.edit.content}>
+				<PortableText value={story.data.content} />
+			</article>
+
+			{
+				story.data.video_url && (
+					<section class="video">
+						<h2>Watch the story</h2>
+						<a href={story.data.video_url}>{story.data.video_url}</a>
+					</section>
+				)
+			}
+		</main>
+	</body>
+</html>
+
+<style>
+	.story {
+		max-width: 720px;
+		margin: 2rem auto;
+		padding: 0 1rem;
+		font-family:
+			system-ui,
+			-apple-system,
+			sans-serif;
+		line-height: 1.6;
+	}
+	.hero img {
+		width: 100%;
+		height: auto;
+		border-radius: 8px;
+	}
+	.story-header h1 {
+		font-size: 2.25rem;
+		margin: 1.5rem 0 0.5rem;
+	}
+	.summary {
+		font-size: 1.15rem;
+		color: #555;
+		margin: 0 0 1.5rem;
+	}
+	.meta {
+		display: grid;
+		grid-template-columns: max-content 1fr;
+		gap: 0.25rem 1rem;
+		margin: 0 0 2rem;
+		padding: 1rem 0;
+		border-top: 1px solid #eee;
+		border-bottom: 1px solid #eee;
+	}
+	.meta > div {
+		display: contents;
+	}
+	.meta dt {
+		font-weight: 600;
+		color: #888;
+		text-transform: uppercase;
+		font-size: 0.75rem;
+		letter-spacing: 0.05em;
+		align-self: center;
+	}
+	.meta dd {
+		margin: 0;
+	}
+	.industries {
+		display: flex;
+		gap: 0.5rem;
+		flex-wrap: wrap;
+	}
+	.industry-tag {
+		display: inline-block;
+		padding: 0.15rem 0.5rem;
+		background: #f0f0f0;
+		border-radius: 4px;
+		text-decoration: none;
+		color: #333;
+		font-size: 0.85rem;
+	}
+	.content :global(h2) {
+		font-size: 1.5rem;
+		margin-top: 2rem;
+	}
+	.content :global(p) {
+		margin: 0 0 1rem;
+	}
+	.video {
+		margin-top: 3rem;
+		padding-top: 2rem;
+		border-top: 1px solid #eee;
+	}
+</style>
