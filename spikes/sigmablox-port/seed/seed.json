@@ -1,0 +1,173 @@
+{
+	"$schema": "https://emdashcms.com/seed.schema.json",
+	"version": "1",
+	"meta": {
+		"name": "Sigmablox Port Spike",
+		"description": "Validates emdash as a Ghost replacement for sigmablox — one content type, real shape.",
+		"author": "Sigmablox"
+	},
+
+	"settings": {
+		"title": "Sigmablox",
+		"tagline": "Founder stories from the cohort"
+	},
+
+	"collections": [
+		{
+			"slug": "success_stories",
+			"label": "Success Stories",
+			"labelSingular": "Success Story",
+			"supports": ["drafts", "revisions", "search", "seo"],
+			"fields": [
+				{
+					"slug": "title",
+					"label": "Title",
+					"type": "string",
+					"required": true,
+					"searchable": true
+				},
+				{
+					"slug": "summary",
+					"label": "Summary",
+					"type": "text",
+					"searchable": true,
+					"description": "Short pitch shown in listings and the page hero."
+				},
+				{
+					"slug": "hero_image",
+					"label": "Hero Image",
+					"type": "image"
+				},
+				{
+					"slug": "company_name",
+					"label": "Company Name",
+					"type": "string",
+					"required": true,
+					"searchable": true
+				},
+				{
+					"slug": "company_id",
+					"label": "Company ID",
+					"type": "string",
+					"description": "Foreign key to the company in the webhook Postgres. Leave blank if not yet linked."
+				},
+				{
+					"slug": "founder_name",
+					"label": "Founder Name",
+					"type": "string",
+					"searchable": true
+				},
+				{
+					"slug": "cohort",
+					"label": "Cohort",
+					"type": "string",
+					"description": "Cohort identifier (e.g. \"2025-spring\"). Joined against webhook Cohort table at render time."
+				},
+				{
+					"slug": "video_url",
+					"label": "Video URL",
+					"type": "url",
+					"description": "Cloudflare Stream playback URL, if any."
+				},
+				{
+					"slug": "featured",
+					"label": "Featured",
+					"type": "boolean"
+				},
+				{
+					"slug": "content",
+					"label": "Story",
+					"type": "portableText",
+					"required": true,
+					"searchable": true
+				}
+			]
+		}
+	],
+
+	"taxonomies": [
+		{
+			"name": "industry",
+			"label": "Industries",
+			"labelSingular": "Industry",
+			"hierarchical": false,
+			"collections": ["success_stories"],
+			"terms": [
+				{ "slug": "ai", "label": "AI / ML" },
+				{ "slug": "biotech", "label": "Biotech" },
+				{ "slug": "climate", "label": "Climate" },
+				{ "slug": "defense", "label": "Defense / Dual-Use" },
+				{ "slug": "fintech", "label": "Fintech" },
+				{ "slug": "hardware", "label": "Hardware" },
+				{ "slug": "saas", "label": "SaaS" }
+			]
+		}
+	],
+
+	"menus": [
+		{
+			"name": "primary",
+			"label": "Primary Navigation",
+			"items": [
+				{ "type": "custom", "label": "Home", "url": "/" },
+				{ "type": "custom", "label": "Success Stories", "url": "/success-stories" }
+			]
+		}
+	],
+
+	"content": {
+		"success_stories": [
+			{
+				"id": "example-success-story",
+				"slug": "example-success-story",
+				"status": "published",
+				"data": {
+					"title": "How Acme Robotics Shipped Their First Defense Contract",
+					"summary": "From a two-person team in a garage to a Phase II SBIR award, in eighteen months.",
+					"company_name": "Acme Robotics",
+					"company_id": "01HZK2J9F0EXAMPLECOMPANY00",
+					"founder_name": "Jane Doe",
+					"cohort": "2025-spring",
+					"featured": true,
+					"hero_image": {
+						"$media": {
+							"url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600&h=900&fit=crop",
+							"alt": "A circuit board on a workbench, partially assembled.",
+							"filename": "acme-hero.jpg"
+						}
+					},
+					"content": [
+						{
+							"_type": "block",
+							"style": "normal",
+							"children": [
+								{
+									"_type": "span",
+									"text": "When Jane joined the cohort, Acme was an idea and a half-built prototype. Eighteen months later they have a signed Phase II SBIR contract, three engineering hires, and a working pipeline of follow-on customers."
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"style": "h2",
+							"children": [{ "_type": "span", "text": "The wedge" }]
+						},
+						{
+							"_type": "block",
+							"style": "normal",
+							"children": [
+								{
+									"_type": "span",
+									"text": "Acme's first instinct was to chase commercial robotics customers. The cohort pushed them in the opposite direction: pick one government end-user, learn their procurement cycle inside out, and let that pull commercial opportunities along behind it."
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"industry": ["defense", "hardware"]
+				}
+			}
+		]
+	}
+}
