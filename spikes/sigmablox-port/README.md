@@ -10,11 +10,11 @@ We pick **one content type** — Success Stories — as the test case. It's low-
 
 ## What's here
 
-| File                                  | Purpose                                                                                       |
-| ------------------------------------- | --------------------------------------------------------------------------------------------- |
-| `seed/seed.json`                      | EmDash schema for `success_stories` + `industry` taxonomy + one sample story.                 |
-| `src/auth/authentik.ts`               | Runtime auth provider — validates Authentik OIDC JWTs and maps groups to emdash roles.        |
-| `astro.config.example.mjs`            | Wires the Authentik provider into `emdash()` as an `AuthDescriptor`.                          |
+| File                                     | Purpose                                                                                                                          |
+| ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| `seed/seed.json`                         | EmDash schema for `success_stories` + `industry` taxonomy + one sample story.                                                    |
+| `src/auth/authentik.ts`                  | Runtime auth provider — validates Authentik OIDC JWTs and maps groups to emdash roles.                                           |
+| `astro.config.example.mjs`               | Wires the Authentik provider into `emdash()` as an `AuthDescriptor`.                                                             |
 | `src/pages/success-stories/[slug].astro` | Astro template that mirrors a typical Ghost `success-story.hbs` — uses Portable Text rendering, image helper, and content query. |
 
 ## How to run it

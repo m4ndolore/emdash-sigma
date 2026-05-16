@@ -6,6 +6,7 @@
 
 import { defineConfig } from "astro/config";
 import emdash from "emdash";
+
 import { authentik } from "./src/auth/authentik.ts";
 
 export default defineConfig({
