@@ -76,12 +76,12 @@ function getJwks(jwksUrl: string) {
 
 function isAuthentikConfig(value: unknown): value is AuthentikConfig {
 	return (
-		value != null &&
 		typeof value === "object" &&
+		value !== null &&
 		"issuer" in value &&
-		typeof (value as AuthentikConfig).issuer === "string" &&
+		typeof value.issuer === "string" &&
 		"audience" in value &&
-		typeof (value as AuthentikConfig).audience === "string"
+		typeof value.audience === "string"
 	);
 }
 
