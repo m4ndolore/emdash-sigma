@@ -85,21 +85,30 @@ function isAuthentikConfig(value: unknown): value is AuthentikConfig {
 	);
 }
 
+const BEARER_PATTERN = /^Bearer\s+(.+)$/i;
+
+function readCookie(cookieHeader: string, name: string): string | null {
+	for (const part of cookieHeader.split(";")) {
+		const trimmed = part.trim();
+		if (trimmed.startsWith(`${name}=`)) {
+			return trimmed.slice(name.length + 1);
+		}
+	}
+	return null;
+}
+
 function extractJwt(request: Request, config: AuthentikConfig): string | null {
 	if (config.cookieName) {
 		const cookies = request.headers.get("Cookie") ?? "";
-		const pattern = new RegExp(
-			`(?:^|;\\s*)${config.cookieName.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}=([^;]+)`,
-		);
-		const match = cookies.match(pattern);
-		if (match?.[1]) return match[1];
+		const value = readCookie(cookies, config.cookieName);
+		if (value) return value;
 	}
 
 	const headerName = config.headerName ?? "Authorization";
 	const headerValue = request.headers.get(headerName);
 	if (!headerValue) return null;
 
-	const bearer = headerValue.match(/^Bearer\s+(.+)$/i);
+	const bearer = headerValue.match(BEARER_PATTERN);
 	return bearer?.[1] ?? headerValue;
 }
 

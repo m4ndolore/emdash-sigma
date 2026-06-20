@@ -5,7 +5,7 @@
 // Everything else is stock create-emdash defaults; tweak to your environment.
 
 import { defineConfig } from "astro/config";
-import emdash from "emdash";
+import emdash from "emdash/astro";
 
 import { authentik } from "./src/auth/authentik.ts";
 
